@@ -10,8 +10,9 @@ import re
 from pathlib import Path
 
 
-SOURCE = Path(__file__).parent / "source_data" / "v1.4_hallym_case_fraud_first.json"
-OUTPUT_DIR = Path(__file__).parent / "processed"
+DATA_DIR = Path(__file__).parent.parent / "data" / "legal_case"
+SOURCE = DATA_DIR / "source_data" / "v1.4_hallym_case_fraud_first.json"
+OUTPUT_DIR = DATA_DIR / "processed"
 
 
 def is_single_fraud(case: dict) -> bool:

@@ -20,8 +20,9 @@ import random
 from pathlib import Path
 
 # ─── 경로 설정 ───
-INPUT_PATH  = Path(__file__).parent / "processed" / "fraud_crime_judgment.json"
-OUTPUT_DIR  = Path(__file__).parent / "target_data"
+DATA_DIR    = Path(__file__).parent.parent / "data" / "legal_case"
+INPUT_PATH  = DATA_DIR / "processed" / "fraud_crime_judgment.json"
+OUTPUT_DIR  = DATA_DIR / "target_data"
 OUTPUT_PATH = OUTPUT_DIR / "dolus_samples.json"
 
 # ─── 추출 파라미터 ───
