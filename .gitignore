@@ -214,3 +214,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Large legal case data files
+data/legal_case/source_data/
+data/legal_case/processed/
+data/legal_case/target_data/
