@@ -1,13 +1,10 @@
 llm:
-  provider: "openai"  # "openai" 또는 "anthropic" 선택
-  model_name: "gpt-4o" # anthropic의 경우 예: "claude-3-5-sonnet-20241022"
+  provider: "google"
+  model_name: "gemini-2.0-flash"
   temperature: 0.1
+  max_retries: 3
 
 paths:
-  data_dir: "f:/논문/paper_trigger/발광페인트/"
-  output_dir: "f:/논문/paper_trigger/output/"
+  data_dir: "data/legal_case/"
+  results_dir: "data/legal_case/results/"
   prompts_dir: "prompts/"
-
-thresholds:
-  human_review_upper: 0.55
-  human_review_lower: 0.45
